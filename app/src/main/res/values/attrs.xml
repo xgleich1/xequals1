@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AnimatedButton">
+        <attr name="animatedButtonAnimation" format="reference" />
+        <attr name="animatedButtonAutostart" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TileLabel">
+        <attr name="tileLabelHtml" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TileButton">
+        <attr name="tileButtonText" format="string" />
+        <attr name="tileButtonLines" format="integer" />
+        <attr name="tileButtonEnabled" format="boolean" />
+        <attr name="tileButtonLoading" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="GoogleButton">
+        <attr name="googleButtonText" format="string" />
+        <attr name="googleButtonEnabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="DraftPanel">
+        <attr name="draftPanelTextSymbolFontId" format="reference" />
+        <attr name="draftPanelTextSymbolFontSize" format="dimension" />
+        <attr name="draftPanelTextItemWidthPadding" format="dimension" />
+        <attr name="draftPanelTextItemHeightPadding" format="dimension" />
+        <attr name="draftPanelTextItemMinSize" format="dimension" />
+        <attr name="draftPanelLineSymbolHeight" format="dimension" />
+        <attr name="draftPanelBracketDraftPaddingLeft" format="dimension" />
+        <attr name="draftPanelBracketDraftPaddingRight" format="dimension" />
+        <attr name="draftPanelNegationDraftPaddingLeft" format="dimension" />
+        <attr name="draftPanelDivisionDraftPaddingLeft" format="dimension" />
+        <attr name="draftPanelDivisionDraftPaddingRight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SymbolGrid">
+        <attr name="symbolGridLineGap" format="dimension" />
+        <attr name="symbolGridLineSize" format="dimension" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Eqs -->
+    <string name="eqs_name" translatable="false">x = 1</string>
+    <string name="eqs_app_id" translatable="false">redacted</string>
+
+    <!-- App Review -->
+    <string name="app_review_review">Review x=1 on the Play Store</string>
+    <string name="app_review_reviewed">Thank you for reviewing x=1</string>
+    <string name="app_review_store_url" translatable="false">market://details?id=com.dg.eqs</string>
+    <string name="app_review_store_package" translatable="false">com.android.vending</string>
+    <string name="app_review_website_url" translatable="false">https://play.google.com/store/apps/details?id=com.dg.eqs</string>
+
+    <!-- Start -->
+    <string name="start_offline_button">SINGLE\nPLAYER</string>
+    <string name="start_online_button">MULTI\nPLAYER</string>
+    <string name="start_info_button">HOW\nTO</string>
+    <string name="start_assist_button">DONATE</string>
+    <string name="start_feedback_button">FEED\nBACK</string>
+
+    <!-- Offline -->
+    <string name="offline_title">SINGLE PLAYER</string>
+    <string name="offline_message_no_equations_solved"><![CDATA[<font color=red>0</font><br>equations solved,<br>it\'s time to play!]]></string>
+    <string name="offline_message_one_equation_solved"><![CDATA[<font color=green>1</font><br>equation solved,<br>good job!]]></string>
+    <string name="offline_message_some_equations_solved"><![CDATA[<font color=green>%1$d</font><br>equations solved,<br>you are awesome!]]></string>
+    <string name="offline_message_many_equations_solved"><![CDATA[<font color=green>%1$d</font><br>equations solved,<br>you are incredible!]]></string>
+    <string name="offline_level_button">ALREADY\nPLAYED</string>
+    <string name="offline_play_button">START\nPLAYING</string>
+
+    <!-- Game -->
+    <string name="game_initial_status_no_steps">Let\'s go, solve the equation!</string>
+    <string name="game_initial_status_one_step">Solved in one step</string>
+    <string name="game_initial_status_some_steps">Solved in %1$d steps</string>
+    <string name="game_initial_status_many_steps">Solved in over 99 steps</string>
+    <string name="game_ensuing_status_some_steps">Step %1$d</string>
+    <string name="game_ensuing_status_many_steps">Over 99 steps</string>
+    <string name="game_ceasing_status_one_step">Superb, solved in one step!</string>
+    <string name="game_ceasing_status_some_steps">Superb, solved in %1$d steps!</string>
+    <string name="game_ceasing_status_many_steps">Superb, solved in over 99 steps!</string>
+    <string name="game_ceasing_status_one_step_less">Superb, one step less!</string>
+    <string name="game_ceasing_status_some_steps_less">Superb, %1$d steps less!</string>
+    <string name="game_ceasing_status_many_steps_less">Superb, over 99 steps less!</string>
+    <string name="game_ceasing_status_one_step_more">Superb, but one step more!</string>
+    <string name="game_ceasing_status_some_steps_more">Superb, but %1$d steps more!</string>
+    <string name="game_ceasing_status_many_steps_more">Superb, but over 99 steps more!</string>
+    <string name="game_ceasing_status_equal_steps">Superb, same number of steps!</string>
+
+    <!-- Level -->
+    <string name="level_title">ALREADY PLAYED</string>
+    <string name="level_hint">Here you can play each equation again, no matter if it\'s been solved or skipped.</string>
+    <string name="level_item_no_steps">Not yet solved</string>
+    <string name="level_item_one_step">Solved in one step</string>
+    <string name="level_item_some_steps">Solved in %1$d steps</string>
+    <string name="level_item_many_steps">Solved in more than 99 steps</string>
+
+    <!-- Online -->
+    <string name="online_title">MULTI PLAYER</string>
+    <string name="online_status_signed_in"><![CDATA[<font color=green>Test your skills!</font><br>Play events online<br>against other players]]></string>
+    <string name="online_status_signed_out"><![CDATA[Sign into<br><font color=#34A853>Google Play Games</font><br>to play events online]]></string>
+    <string name="online_button_sign_in">Sign in</string>
+    <string name="online_button_sign_out">Sign out</string>
+    <string name="online_button_events">EVENTS</string>
+
+    <!-- Events -->
+    <string name="events_title">EVENTS</string>
+    <string name="events_hint_empty" translatable="false" />
+    <string name="events_hint_download">No events? No problem! Just click the download button in the upper right corner.</string>
+    <string name="events_hint_downloading">Just a moment, the events are being downloaded right now.</string>
+    <string name="events_item_player_score">Your steps</string>
+    <string name="events_item_no_player_score" translatable="false">-</string>
+    <string name="events_item_worse_player_score" translatable="false">%1$d</string>
+    <string name="events_item_better_player_score" translatable="false"><![CDATA[<font color=green>%1$d</font>]]></string>
+    <string name="events_item_top_score">Best steps</string>
+    <string name="events_item_no_top_score" translatable="false">-</string>
+    <string name="events_item_set_top_score" translatable="false">%1$d</string>
+
+    <!-- Event -->
+    <string name="event_title">EVENT %1$d</string>
+    <string name="event_score_button">YOUR\nSTEPS</string>
+    <string name="event_play_button">PLAY\nEVENT</string>
+
+    <!-- Info How To -->
+    <string name="info_how_to_title">How to</string>
+    <string name="info_how_to_description_1">The most important thing first. Your task is to solve equations for their unknown X! Thoughtfully summarize and shift elements to solve each one.</string>
+    <string name="info_how_to_description_2">It\'s a breeze to summarize elements. Just mark an element with your fingertip and draw an arrow to your target.</string>
+    <string name="info_how_to_description_3">Marking several elements is also easily done. Keep your fingertip on one element and you will mark more and more!</string>
+    <string name="info_how_to_description_4">Naturally, this works with your target too.</string>
+    <string name="info_how_to_description_5">Fractions, for example, are summarized exactly like that. Stay with your fingertip on the first fraction until it\'s marked. After that, draw an arrow to the second. Finally, wait a bit without lifting your fingertip.</string>
+    <string name="info_how_to_description_6">Shifting elements is no sorcery too. Mark one or more with your fingertip and draw a line to the other side of the equation, done!</string>
+    <string name="info_how_to_description_7">Last but not least the game\'s control bar. Its job is to assist you while you are solving the equations.</string>
+    <string name="info_how_to_description_8">This symbol will undo your last action.</string>
+    <string name="info_how_to_description_9">Plus-minus multiplies both sides of an equation with minus one. This is especially useful when you solved one for -X.</string>
+    <string name="info_how_to_description_10">Don\'t worry if you can\'t solve an equation, simply click here to get the next one.</string>
+    <string name="info_how_to_description_11">Useful information about your actions are hidden behind the little \'i\'.</string>
+    <string name="info_how_to_description_12">If you\'re done playing, you can click here to exit the game.</string>
+
+    <!-- Info App Review -->
+    <string name="info_app_review_description_1">Good job solving lots of equations so far! I hope you had fun and learned a thing or two. x=1 is lovingly built to show that math is fun when taught right.</string>
+    <string name="info_app_review_description_2">Honest reviews help a lot to improve x=1. So if you have a minute, click the button below to review x=1. Just a rating is, of course, appreciated too!</string>
+
+    <!-- Info Equation -->
+    <string name="info_equation_title">Equation</string>
+    <string name="info_equation_description_1">The most important element of an equation (besides you trying to solve it!) is its equal sign. It symbolizes the balance between both sides.</string>
+    <string name="info_equation_description_2">It gets interesting once an unknown X sneaks into it! Now it\'s important to find the correct number to retain the balance.</string>
+    <string name="info_equation_description_3">This is even useful apart from math lessons! Think about preparing a gaming session (of course you want to play x=1) with your pal. You definitely need enough food to munch. Your pal eats 2 pizzas in an hour and you eat 1 in the meantime. How many pizzas do you have to order to prepare for a 3 hour session?</string>
+    <string name="info_equation_description_4">You can take on this problem with an equation! Just find the X and this overwhelmingly important problem is solved!</string>
+
+    <!-- Info Order Of Operations -->
+    <string name="info_order_of_operations_title">Order of operations</string>
+    <string name="info_order_of_operations_description_1">Multiplication and division always take precedence over addition and subtraction. It\'s the most important rule when solving an equation! Let\'s neglect the rule for once and see what happens:</string>
+    <string name="info_order_of_operations_description_2">This can\'t be right! The equation is off balance! Now stick to the rule and multiply before adding.</string>
+    <string name="info_order_of_operations_description_3">This yields the correct result. It\'s not possible to calculate without the rule. Remember it well!</string>
+
+    <!-- Info Addition -->
+    <string name="info_addition_title">Addition</string>
+    <string name="info_addition_description_1">The addition is the first and most simple mathematical operation. There are still some important rules, you need to remember. First of all adding 0 doesn\'t  change the result:</string>
+    <string name="info_addition_description_2">Secondly, it\'s possible to interchange parts of an addition, as long as you don\'t forget about the signs.</string>
+    <string name="info_addition_description_3">Adding two fractions is just a little bit more complicated, since both have to have the same denominator.</string>
+    <string name="info_addition_description_4">If the denominators are different, you have to extend both fractions to make sure the denominators match. To do so, you first have to multiply both denominators. Afterwards you extend the numerators by multiplying the numerator of the first fraction with the denominator of the second and vice versa. At last, just add the two extended numerators.</string>
+
+    <!-- Info Subtraction -->
+    <string name="info_subtraction_title">Subtraction</string>
+    <string name="info_subtraction_description_1">The subtraction is the inverse of the addition. You can reverse an addition with it:</string>
+    <string name="info_subtraction_description_2">Now let\'s see how you can retrieve one addend from the result. That\'s an easy task with the subtraction - just subtract the 2 from the 3!</string>
+    <string name="info_subtraction_description_3">The rules for the subtraction are similar to those of the addition. Likewise subtracting 0 doesn\'t  change the result.</string>
+    <string name="info_subtraction_description_4">Moreover, it\'s possible to interchange parts of a subtraction, as long as you don\'t forget about the signs.</string>
+    <string name="info_subtraction_description_5">Subtracting two fractions is also slightly more complicated, but don\'t worry, you can do it! Again, both have to have the same denominator.</string>
+    <string name="info_subtraction_description_6">If the denominators are different, you have to extend both fractions to make sure the denominators match. To do so, you first have to multiply both denominators. Afterwards you extend the numerators by multiplying the numerator of the first fraction with the denominator of the second and vice versa. At last, just subtract the two extended numerators.</string>
+
+    <!-- Info Multiplication -->
+    <string name="info_multiplication_title">Multiplication</string>
+    <string name="info_multiplication_description_1">The multiplication is an abbreviation of the addition. That\'s the only thing you need to know! Just look at the long addition on the left side and compare it to its abbreviation on the right. What a wonderful way to save space!</string>
+    <string name="info_multiplication_description_2">Subsequently multiplying by 0 has to result in 0.</string>
+    <string name="info_multiplication_description_3">As it\'s basically an addition, you\'re allowed to interchange the parts of a multiplication too. Don\'t forget the signs, though.</string>
+    <string name="info_multiplication_description_4">Let\'s have a closer look at the signs. Be careful of how many elements with a negative sign you multiply. A single negative sign will get you a negative result.</string>
+    <string name="info_multiplication_description_5">And what happens with two negative signs? Well, minus * minus results in a plus!</string>
+    <string name="info_multiplication_description_6">Finally the multiplication of fractions. Just multiply their numerators and denominators, easy!</string>
+
+    <!-- Info Division -->
+    <string name="info_division_title">Division</string>
+    <string name="info_division_description_1">The division is the inverse of the multiplication. You can reverse a multiplication with it! Take a look at this little example:</string>
+    <string name="info_division_description_2">If you want to know how many \'2s\' are hidden inside the result, a division will answer your question!</string>
+    <string name="info_division_description_3">Which leads to the most important rule. Never ever divide through 0! You would get infinity as result and you can\'t calculate with infinity!</string>
+    <string name="info_division_description_4">Finally, let\'s talk about compound fractions. You only have to remember one thing: The compound fraction is just a multiplication of the numerator with the reciprocal of the denominator.</string>
+    <string name="info_division_description_5">Reciprocal seems awfully complicated at first, but have a look at this.</string>
+    <string name="info_division_description_6">The fraction on the right is simply the inverse of the left. Just reverse the fraction for its reciprocal.</string>
+
+    <!-- Info Reduce -->
+    <string name="info_reduce_title">Reducing</string>
+    <string name="info_reduce_description_1">Reducing is a wonderful way to simplify fractions. You just have to divide the numerator and denominator through their greatest common factor! Take a look at this example:</string>
+    <string name="info_reduce_description_2">The greatest common factor is 2. So scratch the 2 from the numerator and divide the denominator through it afterwards. Easy, effective, and your result is a simplified fraction.</string>
+    <string name="info_reduce_description_3">But caution! You can only reduce if the numerator and denominator are either a product or a single element - you can\'t reduce additions and subtractions.</string>
+
+    <!-- Info Condensing With Variable -->
+    <string name="info_condensing_with_variable_description_1">The X is just a variable and likes to stay flexible! Thus, you can\'t summarize these elements of the equation. Try to skillfully release the X instead and you\'re one step closer to the result!</string>
+
+    <!-- Info Division Through Zero -->
+    <string name="info_division_through_zero_description_1">Never divide through 0 - the result would be infinity! You\'ll understand once you divide through very small numbers. Start with one-hundredth.</string>
+    <string name="info_division_through_zero_description_2">Continue with one one-thousandth.</string>
+    <string name="info_division_through_zero_description_3">And then one ten-thousandth.</string>
+    <string name="info_division_through_zero_description_4">The result is increased every time you divide through a smaller number. Infinity is reached once you divide through 0. But infinity isn\'t a number - you can\'t calculate with it!</string>
+
+    <!-- Info Reduce With Dash Operation -->
+    <string name="info_reduce_with_dash_operation_description_1">Reducing only makes sense if the numerator and denominator are either a product or a single element. You notice it immediately if you reduce the 2 in the following fraction.</string>
+    <string name="info_reduce_with_dash_operation_description_2">To do so, you have to divide the whole numerator and denominator through 2 - and don\'t forget the 3! That\'s only possible if you separate the fraction into two parts.</string>
+    <string name="info_reduce_with_dash_operation_description_3">Now you reduce the first fraction and your result will be 1. But wait a second, what happened to the other one? You have to add it again and there you\'re back at the beginning!</string>
+
+    <!-- Info Simplify -->
+    <string name="info_simplify_description_1">Be careful to simplify the equation with every step. Go for the complicated expressions first - that\'s the fastest way!</string>
+
+    <!-- Assist -->
+    <string name="assist_title">DONATE</string>
+    <string name="assist_description_1">x=1 is my passion project and I have tremendous fun working on it! Hopefully you have fun too, and even learned a thing or two.</string>
+    <string name="assist_description_2">I like to keep x=1 free and without advertisement to allow everyone to enjoy math. This is why I want to humbly ask you for help.</string>
+    <string name="assist_description_3">A small donation once or every now and then is enough to avoid costs and advertisement. I can\'t offer you much beyond this knowledge, though.</string>
+    <string name="assist_button_donate">Donate %1$s</string>
+    <string name="assist_donation_status_sku_loading">Just a second, the price equation is being solved.</string>
+    <string name="assist_donation_status_sku_loaded">Price equation solved. Feel free to donate anytime.</string>
+    <string name="assist_donation_status_purchasing">Coming right up, talking technical to Google Play.</string>
+    <string name="assist_donation_status_purchased">Thank you for your donation. You are awesome! A little thank-you awaits you when you scroll up.</string>
+    <string name="assist_donation_status_pending">Your latest donation still needs a bit of time. You can donate again once its payment is confirmed.</string>
+    <string name="assist_donation_status_failed">Oh no, something went wrong. Your donation could not be made.</string>
+    <string name="assist_sku_donation_1" translatable="false">redacted</string>
+
+    <!-- Feedback -->
+    <string name="feedback_title">FEEDBACK</string>
+    <string name="feedback_text">\'The subject of mathematics is so serious that nobody should miss an opportunity to make it a little bit entertaining.\'\nBlaise Pascal\n\nThat\'s what I want to achieve with x=1. Since one opinion (mine!) is surely not enough for this matter: Did you enjoy x=1? And, very importantly, what can I improve? Feel free to contact me via Email or Twitter!\n\nEmail: xgleich1@gmail.com\nTwitter: https://twitter.com/xgleich1</string>
+
+</resources>

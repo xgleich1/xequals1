@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/onlinePage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backButton"
+        style="@style/eqs_back_button"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/eqs_resizing_label"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/global_icon_button_height"
+        android:layout_marginRight="@dimen/global_side_margin"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="@string/online_title"
+        custom:autoSizeMaxTextSize="@dimen/global_font_size_big"
+        custom:layout_constraintLeft_toRightOf="@+id/backButton"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/titleDivider"
+        style="@style/eqs_horizontal_divider"
+        android:layout_width="0dp"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <com.dg.eqs.base.TileLabel
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:layout_constraintBottom_toTopOf="@+id/onlineButtons"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/titleDivider"
+        custom:tileLabelHtml="@string/online_status_signed_in" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/onlineButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_side_margin"
+        android:layout_marginRight="@dimen/global_side_margin"
+        android:layout_marginBottom="@dimen/global_side_margin"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintWidth_max="@dimen/global_tile_button_max_width">
+
+        <com.dg.eqs.base.gamification.GoogleButton
+            android:id="@+id/googleButton"
+            style="@style/eqs_tile_button"
+            android:layout_width="0dp"
+            android:layout_marginRight="1dp"
+            custom:googleButtonEnabled="false"
+            custom:googleButtonText="@string/online_button_sign_out"
+            custom:layout_constraintBottom_toBottomOf="parent"
+            custom:layout_constraintLeft_toLeftOf="parent"
+            custom:layout_constraintRight_toLeftOf="@+id/eventsButton" />
+
+        <com.dg.eqs.base.TileButton
+            android:id="@+id/eventsButton"
+            style="@style/eqs_tile_button"
+            android:layout_width="0dp"
+            android:layout_marginLeft="1dp"
+            custom:layout_constraintBottom_toBottomOf="parent"
+            custom:layout_constraintLeft_toRightOf="@+id/googleButton"
+            custom:layout_constraintRight_toRightOf="parent"
+            custom:tileButtonEnabled="false"
+            custom:tileButtonLines="1"
+            custom:tileButtonLoading="true"
+            custom:tileButtonText="@string/online_button_events" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

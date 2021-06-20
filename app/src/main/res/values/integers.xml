@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Global -->
+    <integer name="global_icon_animation_delay_in_ms">750</integer>
+
+    <!-- Widening -->
+    <integer name="widening_delay_in_ms">1250</integer>
+
+</resources>

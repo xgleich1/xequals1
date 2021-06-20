@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Global -->
+    <dimen name="global_tile_button_max_width">400dp</dimen>
+    <dimen name="global_tile_button_height">98dp</dimen>
+    <dimen name="global_font_size_small">25dp</dimen>
+    <dimen name="global_font_size_big">27.5dp</dimen>
+
+    <dimen name="global_text_symbol_font_size_page">45dp</dimen>
+    <dimen name="global_text_item_width_padding_page">30dp</dimen>
+    <dimen name="global_text_item_height_padding_page">15dp</dimen>
+    <dimen name="global_text_item_min_size_page">75dp</dimen>
+    <dimen name="global_line_symbol_height_page">5.5dp</dimen>
+    <dimen name="global_bracket_draft_padding_left_page">15dp</dimen>
+    <dimen name="global_bracket_draft_padding_right_page">15dp</dimen>
+    <dimen name="global_negation_draft_padding_left_page">15dp</dimen>
+    <dimen name="global_division_draft_padding_left_page">15dp</dimen>
+    <dimen name="global_division_draft_padding_right_page">15dp</dimen>
+
+    <dimen name="global_text_symbol_font_size_list">36dp</dimen>
+    <dimen name="global_text_item_width_padding_list">24dp</dimen>
+    <dimen name="global_text_item_height_padding_list">12dp</dimen>
+    <dimen name="global_text_item_min_size_list">60dp</dimen>
+    <dimen name="global_line_symbol_height_list">4.5dp</dimen>
+    <dimen name="global_bracket_draft_padding_left_list">12dp</dimen>
+    <dimen name="global_bracket_draft_padding_right_list">12dp</dimen>
+    <dimen name="global_negation_draft_padding_left_list">12dp</dimen>
+    <dimen name="global_division_draft_padding_left_list">12dp</dimen>
+    <dimen name="global_division_draft_padding_right_list">12dp</dimen>
+
+    <!-- App Review -->
+    <dimen name="app_review_image_width">275dp</dimen>
+
+    <!-- Start -->
+    <dimen name="start_logo_height">140dp</dimen>
+
+    <!-- Game -->
+    <dimen name="game_grid_line_gap">41.5dp</dimen>
+    <dimen name="game_grid_line_size">3.75dp</dimen>
+    <dimen name="game_mark_stroke_size">5.5dp</dimen>
+    <dimen name="game_arrow_end_offset">112.5dp</dimen>
+    <dimen name="game_arrow_arc_height">75dp</dimen>
+    <dimen name="game_arrow_tip_length">15dp</dimen>
+    <dimen name="game_arrow_stroke_width">3.75dp</dimen>
+
+    <!-- Level -->
+    <dimen name="level_item_panel_height">200dp</dimen>
+    <dimen name="level_item_steps_width">150dp</dimen>
+
+    <!-- Events -->
+    <dimen name="events_item_panel_height">200dp</dimen>
+    <dimen name="events_item_score_width">150dp</dimen>
+
+    <!-- Info -->
+    <dimen name="info_menu_button_width">240dp</dimen>
+    <dimen name="info_image_height_one_row">30dp</dimen>
+    <dimen name="info_image_height_one_row_with_link">117.5dp</dimen>
+    <dimen name="info_image_height_two_rows">117.5dp</dimen>
+    <dimen name="info_image_height_two_rows_with_link">175dp</dimen>
+    <dimen name="info_image_height_three_rows_with_link">260dp</dimen>
+    <dimen name="info_image_height_four_rows">290dp</dimen>
+
+    <!-- Assist -->
+    <dimen name="assist_image_width">275dp</dimen>
+
+</resources>

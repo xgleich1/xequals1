@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/infoPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backButton"
+        style="@style/eqs_back_button"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/infoTitle"
+        style="@style/eqs_resizing_label"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/global_icon_button_height"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textAllCaps="true"
+        custom:autoSizeMaxTextSize="@dimen/global_font_size_big"
+        custom:layout_constraintLeft_toRightOf="@+id/backButton"
+        custom:layout_constraintRight_toLeftOf="@+id/menuButton"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/menuButton"
+        style="@style/eqs_icon_button"
+        android:src="@drawable/menu"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/titleDivider"
+        style="@style/eqs_horizontal_divider"
+        android:layout_width="0dp"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/infoTitle" />
+
+    <ScrollView
+        android:id="@+id/infoContent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/titleDivider" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menuOverlay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/global_overlay_color"
+        android:visibility="gone"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/menuMenuButton"
+            style="@style/eqs_icon_button"
+            android:src="@drawable/menu"
+            custom:layout_constraintRight_toRightOf="parent"
+            custom:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="2.5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/board"
+            custom:layout_constraintBottom_toBottomOf="@+id/menu"
+            custom:layout_constraintLeft_toLeftOf="@+id/menu"
+            custom:layout_constraintRight_toRightOf="@+id/menu"
+            custom:layout_constraintTop_toTopOf="@+id/menu" />
+
+        <ScrollView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            custom:layout_constrainedHeight="true"
+            custom:layout_constraintBottom_toBottomOf="parent"
+            custom:layout_constraintRight_toRightOf="parent"
+            custom:layout_constraintTop_toBottomOf="@+id/menuMenuButton"
+            custom:layout_constraintVertical_bias="0">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/topMenuDivider"
+                    style="@style/eqs_horizontal_divider"
+                    android:layout_width="0dp"
+                    android:paddingLeft="2.5dp"
+                    android:paddingRight="2.5dp"
+                    custom:layout_constraintLeft_toLeftOf="@+id/leftMenuDivider"
+                    custom:layout_constraintRight_toRightOf="@+id/rightMenuDivider"
+                    custom:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/leftMenuDivider"
+                    style="@style/eqs_vertical_divider"
+                    android:layout_height="0dp"
+                    android:paddingTop="1.5dp"
+                    android:paddingBottom="1.5dp"
+                    custom:layout_constraintBottom_toBottomOf="@+id/bottomMenuDivider"
+                    custom:layout_constraintRight_toLeftOf="@+id/howToMenuButton"
+                    custom:layout_constraintTop_toTopOf="@+id/topMenuDivider" />
+
+                <ImageView
+                    android:id="@+id/rightMenuDivider"
+                    style="@style/eqs_vertical_divider"
+                    android:layout_height="0dp"
+                    android:paddingTop="1.5dp"
+                    android:paddingBottom="1.5dp"
+                    custom:layout_constraintBottom_toBottomOf="@+id/bottomMenuDivider"
+                    custom:layout_constraintRight_toRightOf="parent"
+                    custom:layout_constraintTop_toTopOf="@+id/topMenuDivider" />
+
+                <TextView
+                    android:id="@+id/howToMenuButton"
+                    style="@style/eqs_resizing_label"
+                    android:layout_width="@dimen/info_menu_button_width"
+                    android:layout_height="@dimen/global_icon_button_height"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/global_side_margin"
+                    android:paddingRight="@dimen/global_side_margin"
+                    android:text="@string/info_how_to_title"
+                    custom:autoSizeMaxTextSize="@dimen/global_font_size_small"
+                    custom:layout_constraintRight_toLeftOf="@+id/rightMenuDivider"
+                    custom:layout_constraintTop_toBottomOf="@+id/topMenuDivider" />
+
+                <ImageView
+                    android:id="@+id/firstMenuButtonDivider"
+                    style="@style/eqs_horizontal_divider"
+                    android:layout_width="0dp"
+                    android:paddingLeft="2.5dp"
+                    android:paddingRight="2.5dp"
+                    custom:layout_constraintLeft_toLeftOf="@+id/leftMenuDivider"
+                    custom:layout_constraintRight_toRightOf="@+id/rightMenuDivider"
+                    custom:layout_constraintTop_toBottomOf="@+id/howToMenuButton" />
+
+                <TextView
+                    android:id="@+id/equationMenuButton"
+                    style="@style/eqs_resizing_label"
+                    android:layout_width="@dimen/info_menu_button_width"
+                    android:layout_height="@dimen/global_icon_button_height"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/global_side_margin"
+                    android:paddingRight="@dimen/global_side_margin"
+                    android:text="@string/info_equation_title"
+                    custom:autoSizeMaxTextSize="@dimen/global_font_size_small"
+                    custom:layout_constraintRight_toLeftOf="@+id/rightMenuDivider"
+                    custom:layout_constraintTop_toBottomOf="@+id/firstMenuButtonDivider" />
+
+                <ImageView
+                    android:id="@+id/secondMenuButtonDivider"
+                    style="@style/eqs_horizontal_divider"
+                    android:layout_width="0dp"
+                    android:paddingLeft="2.5dp"
+                    android:paddingRight="2.5dp"
+                    custom:layout_constraintLeft_toLeftOf="@+id/leftMenuDivider"
+                    custom:layout_constraintRight_toRightOf="@+id/rightMenuDivider"
+                    custom:layout_constraintTop_toBottomOf="@+id/equationMenuButton" />
+
+                <TextView
+                    android:id="@+id/orderOfOperationsMenuButton"
+                    style="@style/eqs_resizing_label"
+                    android:layout_width="@dimen/info_menu_button_width"
+                    android:layout_height="@dimen/global_icon_button_height"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/global_side_margin"
+                    android:paddingRight="@dimen/global_side_margin"
+                    android:text="@string/info_order_of_operations_title"
+                    custom:autoSizeMaxTextSize="@dimen/global_font_size_small"
+                    custom:layout_constraintRight_toLeftOf="@+id/rightMenuDivider"
+                    custom:layout_constraintTop_toBottomOf="@+id/secondMenuButtonDivider" />
+
+                <ImageView
+                    android:id="@+id/thirdMenuButtonDivider"
+                    style="@style/eqs_horizontal_divider"
+                    android:layout_width="0dp"
+                    android:paddingLeft="2.5dp"
+                    android:paddingRight="2.5dp"
+                    custom:layout_constraintLeft_toLeftOf="@+id/leftMenuDivider"
+                    custom:layout_constraintRight_toRightOf="@+id/rightMenuDivider"
+                    custom:layout_constraintTop_toBottomOf="@+id/orderOfOperationsMenuButton" />
+
+                <TextView
+                    android:id="@+id/additionMenuButton"
+                    style="@style/eqs_resizing_label"
+                    android:layout_width="@dimen/info_menu_button_width"
+                    android:layout_height="@dimen/global_icon_button_height"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/global_side_margin"
+                    android:paddingRight="@dimen/global_side_margin"
+                    android:text="@string/info_addition_title"
+                    custom:autoSizeMaxTextSize="@dimen/global_font_size_small"
+                    custom:layout_constraintRight_toLeftOf="@+id/rightMenuDivider"
+                    custom:layout_constraintTop_toBottomOf="@+id/thirdMenuButtonDivider" />
+
+                <ImageView
+                    android:id="@+id/fourthMenuButtonDivider"
+                    style="@style/eqs_horizontal_divider"
+                    android:layout_width="0dp"
+                    android:paddingLeft="2.5dp"
+                    android:paddingRight="2.5dp"
+                    custom:layout_constraintLeft_toLeftOf="@+id/leftMenuDivider"
+                    custom:layout_constraintRight_toRightOf="@+id/rightMenuDivider"
+                    custom:layout_constraintTop_toBottomOf="@+id/additionMenuButton" />
+
+                <TextView
+                    android:id="@+id/subtractionMenuButton"
+                    style="@style/eqs_resizing_label"
+                    android:layout_width="@dimen/info_menu_button_width"
+                    android:layout_height="@dimen/global_icon_button_height"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/global_side_margin"
+                    android:paddingRight="@dimen/global_side_margin"
+                    android:text="@string/info_subtraction_title"
+                    custom:autoSizeMaxTextSize="@dimen/global_font_size_small"
+                    custom:layout_constraintRight_toLeftOf="@+id/rightMenuDivider"
+                    custom:layout_constraintTop_toBottomOf="@+id/fourthMenuButtonDivider" />
+
+                <ImageView
+                    android:id="@+id/fifthMenuButtonDivider"
+                    style="@style/eqs_horizontal_divider"
+                    android:layout_width="0dp"
+                    android:paddingLeft="2.5dp"
+                    android:paddingRight="2.5dp"
+                    custom:layout_constraintLeft_toLeftOf="@+id/leftMenuDivider"
+                    custom:layout_constraintRight_toRightOf="@+id/rightMenuDivider"
+                    custom:layout_constraintTop_toBottomOf="@+id/subtractionMenuButton" />
+
+                <TextView
+                    android:id="@+id/multiplicationMenuButton"
+                    style="@style/eqs_resizing_label"
+                    android:layout_width="@dimen/info_menu_button_width"
+                    android:layout_height="@dimen/global_icon_button_height"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/global_side_margin"
+                    android:paddingRight="@dimen/global_side_margin"
+                    android:text="@string/info_multiplication_title"
+                    custom:autoSizeMaxTextSize="@dimen/global_font_size_small"
+                    custom:layout_constraintRight_toLeftOf="@+id/rightMenuDivider"
+                    custom:layout_constraintTop_toBottomOf="@+id/fifthMenuButtonDivider" />
+
+                <ImageView
+                    android:id="@+id/sixthMenuButtonDivider"
+                    style="@style/eqs_horizontal_divider"
+                    android:layout_width="0dp"
+                    android:paddingLeft="2.5dp"
+                    android:paddingRight="2.5dp"
+                    custom:layout_constraintLeft_toLeftOf="@+id/leftMenuDivider"
+                    custom:layout_constraintRight_toRightOf="@+id/rightMenuDivider"
+                    custom:layout_constraintTop_toBottomOf="@+id/multiplicationMenuButton" />
+
+                <TextView
+                    android:id="@+id/divisionMenuButton"
+                    style="@style/eqs_resizing_label"
+                    android:layout_width="@dimen/info_menu_button_width"
+                    android:layout_height="@dimen/global_icon_button_height"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/global_side_margin"
+                    android:paddingRight="@dimen/global_side_margin"
+                    android:text="@string/info_division_title"
+                    custom:autoSizeMaxTextSize="@dimen/global_font_size_small"
+                    custom:layout_constraintRight_toLeftOf="@+id/rightMenuDivider"
+                    custom:layout_constraintTop_toBottomOf="@+id/sixthMenuButtonDivider" />
+
+                <ImageView
+                    android:id="@+id/seventhMenuButtonDivider"
+                    style="@style/eqs_horizontal_divider"
+                    android:layout_width="0dp"
+                    android:paddingLeft="2.5dp"
+                    android:paddingRight="2.5dp"
+                    custom:layout_constraintLeft_toLeftOf="@+id/leftMenuDivider"
+                    custom:layout_constraintRight_toRightOf="@+id/rightMenuDivider"
+                    custom:layout_constraintTop_toBottomOf="@+id/divisionMenuButton" />
+
+                <TextView
+                    android:id="@+id/reduceMenuButton"
+                    style="@style/eqs_resizing_label"
+                    android:layout_width="@dimen/info_menu_button_width"
+                    android:layout_height="@dimen/global_icon_button_height"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/global_side_margin"
+                    android:paddingRight="@dimen/global_side_margin"
+                    android:text="@string/info_reduce_title"
+                    custom:autoSizeMaxTextSize="@dimen/global_font_size_small"
+                    custom:layout_constraintRight_toLeftOf="@+id/rightMenuDivider"
+                    custom:layout_constraintTop_toBottomOf="@+id/seventhMenuButtonDivider" />
+
+                <ImageView
+                    android:id="@+id/bottomMenuDivider"
+                    style="@style/eqs_horizontal_divider"
+                    android:layout_width="0dp"
+                    android:paddingLeft="2.5dp"
+                    android:paddingRight="2.5dp"
+                    custom:layout_constraintLeft_toLeftOf="@+id/leftMenuDivider"
+                    custom:layout_constraintRight_toRightOf="@+id/rightMenuDivider"
+                    custom:layout_constraintTop_toBottomOf="@+id/reduceMenuButton" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

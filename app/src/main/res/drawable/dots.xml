@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/dots_1"
+        android:duration="@integer/global_icon_animation_delay_in_ms" />
+
+    <item
+        android:drawable="@drawable/dots_2"
+        android:duration="@integer/global_icon_animation_delay_in_ms" />
+
+    <item
+        android:drawable="@drawable/dots_3"
+        android:duration="@integer/global_icon_animation_delay_in_ms" />
+
+</animation-list>

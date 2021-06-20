@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/infoAppReview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/global_side_margin"
+    android:layout_marginRight="@dimen/global_side_margin">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/app_review_image_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/global_side_margin"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/daniel"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/firstDescription"
+        style="@style/eqs_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/global_side_margin"
+        android:text="@string/info_app_review_description_1"
+        android:textSize="@dimen/global_font_size_small"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <TextView
+        android:id="@+id/secondDescription"
+        style="@style/eqs_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/global_side_margin"
+        android:text="@string/info_app_review_description_2"
+        android:textSize="@dimen/global_font_size_small"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/firstDescription" />
+
+    <com.dg.eqs.base.reviewing.AppReviewButton
+        style="@style/eqs_tile_button"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/global_side_margin"
+        android:layout_marginBottom="@dimen/global_side_margin"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/secondDescription"
+        custom:layout_constraintWidth_max="@dimen/global_tile_button_max_width"
+        custom:tileButtonLines="1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

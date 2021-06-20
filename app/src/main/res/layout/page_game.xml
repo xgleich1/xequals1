@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gamePage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backButton"
+        style="@style/eqs_back_button"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/revertButton"
+        style="@style/eqs_icon_button"
+        android:paddingLeft="@dimen/global_side_margin_halved"
+        android:paddingRight="@dimen/global_side_margin_halved"
+        android:src="@drawable/revert"
+        custom:layout_constraintRight_toLeftOf="@+id/invertButton"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/invertButton"
+        style="@style/eqs_icon_button"
+        android:paddingLeft="@dimen/global_side_margin_halved"
+        android:paddingRight="@dimen/global_side_margin_halved"
+        android:src="@drawable/invert"
+        custom:layout_constraintRight_toLeftOf="@+id/skipButton"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/skipButton"
+        style="@style/eqs_icon_button"
+        android:paddingLeft="@dimen/global_side_margin_halved"
+        android:paddingRight="@dimen/global_side_margin_halved"
+        android:src="@drawable/skip"
+        custom:layout_constraintRight_toLeftOf="@+id/infoButton"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/infoButton"
+        style="@style/eqs_icon_button"
+        android:paddingLeft="@dimen/global_side_margin_halved"
+        android:src="@drawable/info"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/controlsDivider"
+        style="@style/eqs_horizontal_divider"
+        android:layout_width="0dp"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/backButton" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/gameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/controlsDivider">
+
+        <com.dg.eqs.page.game.GameGrid
+            android:id="@+id/gameGrid"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            custom:layout_constraintBottom_toTopOf="@+id/statusDivider"
+            custom:layout_constraintLeft_toLeftOf="parent"
+            custom:layout_constraintRight_toRightOf="parent"
+            custom:layout_constraintTop_toTopOf="parent"
+            custom:symbolGridLineGap="@dimen/game_grid_line_gap"
+            custom:symbolGridLineSize="@dimen/game_grid_line_size" />
+
+        <ImageView
+            android:id="@+id/finishedIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0.15"
+            android:scaleType="centerInside"
+            android:src="@drawable/finished"
+            android:visibility="gone"
+            custom:layout_constraintBottom_toTopOf="@+id/statusDivider"
+            custom:layout_constraintLeft_toLeftOf="parent"
+            custom:layout_constraintRight_toRightOf="parent"
+            custom:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/statusDivider"
+            style="@style/eqs_horizontal_divider"
+            android:layout_width="0dp"
+            custom:layout_constraintBottom_toTopOf="@+id/status"
+            custom:layout_constraintLeft_toLeftOf="parent"
+            custom:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/status"
+            style="@style/eqs_resizing_label"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/global_icon_button_height"
+            android:layout_marginLeft="@dimen/global_side_margin"
+            android:layout_marginRight="@dimen/global_side_margin"
+            android:gravity="center"
+            android:maxLines="1"
+            custom:autoSizeMaxTextSize="@dimen/global_font_size_small"
+            custom:layout_constraintBottom_toBottomOf="parent"
+            custom:layout_constraintLeft_toLeftOf="parent"
+            custom:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/infoLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/global_overlay_color"
+            custom:layout_constraintBottom_toBottomOf="@+id/infoInfoButton"
+            custom:layout_constraintLeft_toLeftOf="parent"
+            custom:layout_constraintRight_toRightOf="parent"
+            custom:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/infoInfoButton"
+            style="@style/eqs_icon_button"
+            android:src="@drawable/info"
+            custom:layout_constraintRight_toRightOf="parent"
+            custom:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/infoDivider"
+            style="@style/eqs_horizontal_divider"
+            android:layout_width="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            custom:layout_constraintLeft_toLeftOf="parent"
+            custom:layout_constraintRight_toRightOf="parent"
+            custom:layout_constraintTop_toBottomOf="@+id/infoInfoButton" />
+
+        <ScrollView
+            android:id="@+id/infoContainer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:overScrollMode="never"
+            custom:layout_constraintBottom_toBottomOf="parent"
+            custom:layout_constraintLeft_toLeftOf="parent"
+            custom:layout_constraintRight_toRightOf="parent"
+            custom:layout_constraintTop_toBottomOf="@+id/infoDivider" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

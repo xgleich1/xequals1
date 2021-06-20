@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="eqs_theme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowBackground">@drawable/board</item>
+    </style>
+
+    <style name="eqs_label">
+        <item name="android:fontFamily">@font/font_eqs</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="eqs_resizing_label" parent="eqs_label">
+        <item name="autoSizeTextType">uniform</item>
+        <item name="autoSizeMinTextSize">1sp</item>
+        <item name="autoSizeStepGranularity">1sp</item>
+    </style>
+
+    <style name="eqs_icon_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/global_icon_button_height</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingLeft">@dimen/global_side_margin</item>
+        <item name="android:paddingRight">@dimen/global_side_margin</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="eqs_back_button" parent="eqs_icon_button">
+        <item name="android:src">@drawable/back</item>
+    </style>
+
+    <style name="eqs_tile_button">
+        <item name="android:layout_height">@dimen/global_tile_button_height</item>
+    </style>
+
+    <style name="eqs_horizontal_divider">
+        <item name="android:layout_height">@dimen/global_stroke_size</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/stroke_horizontal</item>
+    </style>
+
+    <style name="eqs_vertical_divider">
+        <item name="android:layout_width">@dimen/global_stroke_size</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/stroke_vertical</item>
+    </style>
+
+    <style name="eqs_page_panel_draft">
+        <item name="draftPanelTextSymbolFontId">@font/font_eqs</item>
+        <item name="draftPanelTextSymbolFontSize">@dimen/global_text_symbol_font_size_page</item>
+        <item name="draftPanelTextItemWidthPadding">@dimen/global_text_item_width_padding_page</item>
+        <item name="draftPanelTextItemHeightPadding">@dimen/global_text_item_height_padding_page</item>
+        <item name="draftPanelTextItemMinSize">@dimen/global_text_item_min_size_page</item>
+        <item name="draftPanelLineSymbolHeight">@dimen/global_line_symbol_height_page</item>
+        <item name="draftPanelBracketDraftPaddingLeft">@dimen/global_bracket_draft_padding_left_page</item>
+        <item name="draftPanelBracketDraftPaddingRight">@dimen/global_bracket_draft_padding_right_page</item>
+        <item name="draftPanelNegationDraftPaddingLeft">@dimen/global_negation_draft_padding_left_page</item>
+        <item name="draftPanelDivisionDraftPaddingLeft">@dimen/global_division_draft_padding_left_page</item>
+        <item name="draftPanelDivisionDraftPaddingRight">@dimen/global_division_draft_padding_right_page</item>
+    </style>
+
+    <style name="eqs_list_panel_draft">
+        <item name="draftPanelTextSymbolFontId">@font/font_eqs</item>
+        <item name="draftPanelTextSymbolFontSize">@dimen/global_text_symbol_font_size_list</item>
+        <item name="draftPanelTextItemWidthPadding">@dimen/global_text_item_width_padding_list</item>
+        <item name="draftPanelTextItemHeightPadding">@dimen/global_text_item_height_padding_list</item>
+        <item name="draftPanelTextItemMinSize">@dimen/global_text_item_min_size_list</item>
+        <item name="draftPanelLineSymbolHeight">@dimen/global_line_symbol_height_list</item>
+        <item name="draftPanelBracketDraftPaddingLeft">@dimen/global_bracket_draft_padding_left_list</item>
+        <item name="draftPanelBracketDraftPaddingRight">@dimen/global_bracket_draft_padding_right_list</item>
+        <item name="draftPanelNegationDraftPaddingLeft">@dimen/global_negation_draft_padding_left_list</item>
+        <item name="draftPanelDivisionDraftPaddingLeft">@dimen/global_division_draft_padding_left_list</item>
+        <item name="draftPanelDivisionDraftPaddingRight">@dimen/global_division_draft_padding_right_list</item>
+    </style>
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/offlinePage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backButton"
+        style="@style/eqs_back_button"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/eqs_resizing_label"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/global_icon_button_height"
+        android:layout_marginRight="@dimen/global_side_margin"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="@string/offline_title"
+        custom:autoSizeMaxTextSize="@dimen/global_font_size_big"
+        custom:layout_constraintLeft_toRightOf="@+id/backButton"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/titleDivider"
+        style="@style/eqs_horizontal_divider"
+        android:layout_width="0dp"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <com.dg.eqs.base.TileLabel
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:layout_constraintBottom_toTopOf="@+id/offlineButtons"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/titleDivider" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/offlineButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_side_margin"
+        android:layout_marginRight="@dimen/global_side_margin"
+        android:layout_marginBottom="@dimen/global_side_margin"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintWidth_max="@dimen/global_tile_button_max_width">
+
+        <com.dg.eqs.base.TileButton
+            android:id="@+id/levelButton"
+            style="@style/eqs_tile_button"
+            android:layout_width="0dp"
+            android:layout_marginRight="1dp"
+            custom:layout_constraintBottom_toBottomOf="parent"
+            custom:layout_constraintLeft_toLeftOf="parent"
+            custom:layout_constraintRight_toLeftOf="@+id/playButton"
+            custom:layout_constraintTop_toTopOf="parent"
+            custom:tileButtonLines="2"
+            custom:tileButtonText="@string/offline_level_button" />
+
+        <com.dg.eqs.base.TileButton
+            android:id="@+id/playButton"
+            style="@style/eqs_tile_button"
+            android:layout_width="0dp"
+            android:layout_marginLeft="1dp"
+            custom:layout_constraintBottom_toBottomOf="parent"
+            custom:layout_constraintLeft_toRightOf="@+id/levelButton"
+            custom:layout_constraintRight_toRightOf="parent"
+            custom:layout_constraintTop_toTopOf="parent"
+            custom:tileButtonLines="2"
+            custom:tileButtonText="@string/offline_play_button" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

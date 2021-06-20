@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dg.eqs">
+
+    <application
+        android:name=".Eqs"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/eqs_name"
+        android:largeHeap="true"
+        android:supportsRtl="false"
+        android:theme="@style/eqs_theme">
+
+        <activity
+            android:name=".page.start.StartPage"
+            android:launchMode="singleTask">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".page.offline.OfflinePage" />
+
+        <activity android:name=".page.game.GamePage" />
+
+        <activity android:name=".page.level.LevelPage" />
+
+        <activity android:name=".page.online.OnlinePage" />
+
+        <activity android:name=".page.events.EventsPage" />
+
+        <activity android:name=".page.event.EventPage" />
+
+        <activity android:name=".page.info.InfoPage" />
+
+        <activity android:name=".page.assist.AssistPage" />
+
+        <activity android:name=".page.feedback.FeedbackPage" />
+
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="@bool/firebase_analytics_enabled" />
+
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="@bool/firebase_crashlytics_enabled" />
+
+        <meta-data
+            android:name="com.google.android.gms.games.APP_ID"
+            android:value="@string/eqs_app_id" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

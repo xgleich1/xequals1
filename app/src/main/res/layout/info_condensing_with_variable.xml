@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/global_side_margin"
+    android:layout_marginRight="@dimen/global_side_margin"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/eqs_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/global_side_margin"
+        android:layout_marginBottom="@dimen/global_side_margin"
+        android:text="@string/info_condensing_with_variable_description_1"
+        android:textSize="@dimen/global_font_size_small" />
+
+</LinearLayout>

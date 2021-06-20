@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/eventsPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backButton"
+        style="@style/eqs_back_button"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/eventsTitle"
+        style="@style/eqs_resizing_label"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/global_icon_button_height"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="@string/events_title"
+        custom:autoSizeMaxTextSize="@dimen/global_font_size_big"
+        custom:layout_constraintLeft_toRightOf="@+id/backButton"
+        custom:layout_constraintRight_toLeftOf="@+id/downloadButton"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <com.dg.eqs.base.AnimatedButton
+        android:id="@+id/downloadButton"
+        style="@style/eqs_icon_button"
+        custom:animatedButtonAnimation="@drawable/download"
+        custom:animatedButtonAutostart="false"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/titleDivider"
+        style="@style/eqs_horizontal_divider"
+        android:layout_width="0dp"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/eventsTitle" />
+
+    <com.dg.eqs.page.events.EventsList
+        android:id="@+id/eventsList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/titleDivider" />
+
+    <TextView
+        android:id="@+id/eventsHint"
+        style="@style/eqs_label"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/global_side_margin"
+        android:gravity="center"
+        android:textSize="@dimen/global_font_size_small"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/titleDivider" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

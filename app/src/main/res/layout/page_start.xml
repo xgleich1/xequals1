@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/startPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/global_side_margin"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+        custom:layout_constraintBottom_toTopOf="@+id/startButtons"
+        custom:layout_constraintHeight_max="@dimen/start_logo_height"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/startButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_side_margin"
+        android:layout_marginRight="@dimen/global_side_margin"
+        android:layout_marginBottom="@dimen/global_side_margin"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintWidth_max="@dimen/global_tile_button_max_width">
+
+        <com.dg.eqs.base.TileButton
+            android:id="@+id/offlineButton"
+            style="@style/eqs_tile_button"
+            android:layout_width="0dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="2dp"
+            custom:layout_constraintBottom_toTopOf="@+id/infoButton"
+            custom:layout_constraintLeft_toLeftOf="parent"
+            custom:layout_constraintRight_toLeftOf="@+id/onlineButton"
+            custom:tileButtonLines="2"
+            custom:tileButtonText="@string/start_offline_button" />
+
+        <com.dg.eqs.base.TileButton
+            android:id="@+id/onlineButton"
+            style="@style/eqs_tile_button"
+            android:layout_width="0dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginBottom="2dp"
+            custom:layout_constraintBottom_toTopOf="@+id/feedbackButton"
+            custom:layout_constraintLeft_toRightOf="@+id/offlineButton"
+            custom:layout_constraintRight_toRightOf="parent"
+            custom:tileButtonLines="2"
+            custom:tileButtonText="@string/start_online_button" />
+
+        <com.dg.eqs.base.TileButton
+            android:id="@+id/infoButton"
+            style="@style/eqs_tile_button"
+            android:layout_width="0dp"
+            android:layout_marginRight="1dp"
+            custom:layout_constraintBottom_toBottomOf="parent"
+            custom:layout_constraintLeft_toLeftOf="parent"
+            custom:layout_constraintRight_toLeftOf="@+id/assistButton"
+            custom:tileButtonLines="2"
+            custom:tileButtonText="@string/start_info_button" />
+
+        <com.dg.eqs.base.TileButton
+            android:id="@+id/assistButton"
+            style="@style/eqs_tile_button"
+            android:layout_width="0dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            custom:layout_constraintBottom_toBottomOf="parent"
+            custom:layout_constraintLeft_toRightOf="@+id/infoButton"
+            custom:layout_constraintRight_toLeftOf="@+id/feedbackButton"
+            custom:tileButtonLines="1"
+            custom:tileButtonText="@string/start_assist_button" />
+
+        <com.dg.eqs.base.TileButton
+            android:id="@+id/feedbackButton"
+            style="@style/eqs_tile_button"
+            android:layout_width="0dp"
+            android:layout_marginLeft="1dp"
+            custom:layout_constraintBottom_toBottomOf="parent"
+            custom:layout_constraintLeft_toRightOf="@+id/assistButton"
+            custom:layout_constraintRight_toRightOf="parent"
+            custom:tileButtonLines="2"
+            custom:tileButtonText="@string/start_feedback_button" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

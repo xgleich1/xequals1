@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/topLeftStroke"
+        android:layout_width="@dimen/global_stroke_size"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/stroke_top_left"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/leftStroke"
+        android:layout_width="@dimen/global_stroke_size"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/stroke_vertical"
+        custom:layout_constraintBottom_toTopOf="@+id/bottomLeftStroke"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/topLeftStroke" />
+
+    <ImageView
+        android:id="@+id/bottomLeftStroke"
+        android:layout_width="@dimen/global_stroke_size"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/stroke_bottom_left"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/bottomStroke"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/global_stroke_size"
+        android:scaleType="fitXY"
+        android:src="@drawable/stroke_horizontal"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintLeft_toRightOf="@+id/bottomLeftStroke"
+        custom:layout_constraintRight_toLeftOf="@+id/bottomRightStroke" />
+
+    <ImageView
+        android:id="@+id/bottomRightStroke"
+        android:layout_width="@dimen/global_stroke_size"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/stroke_bottom_right"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/rightStroke"
+        android:layout_width="@dimen/global_stroke_size"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/stroke_vertical"
+        custom:layout_constraintBottom_toTopOf="@+id/bottomRightStroke"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/topRightStroke" />
+
+    <ImageView
+        android:id="@+id/topRightStroke"
+        android:layout_width="@dimen/global_stroke_size"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/stroke_top_right"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/topStroke"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/global_stroke_size"
+        android:scaleType="fitXY"
+        android:src="@drawable/stroke_horizontal"
+        custom:layout_constraintLeft_toRightOf="@+id/topLeftStroke"
+        custom:layout_constraintRight_toLeftOf="@+id/topRightStroke"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/global_stroke_size_halved"
+        android:background="@android:color/white"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/google"
+        custom:layout_constraintBottom_toBottomOf="@+id/label"
+        custom:layout_constraintHorizontal_chainStyle="packed"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toLeftOf="@+id/label"
+        custom:layout_constraintTop_toTopOf="@+id/label" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_side_margin"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#80000000"
+        android:textSize="@dimen/global_font_size_big"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintLeft_toRightOf="@+id/logo"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintTop_toTopOf="parent"
+        tools:text="Google" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

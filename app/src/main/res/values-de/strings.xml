@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App Review -->
+    <string name="app_review_review">Rezensiere x=1 im Play Store</string>
+    <string name="app_review_reviewed">Vielen Dank für deine Rezension</string>
+
+    <!-- Start -->
+    <string name="start_offline_button">SINGLE\nPLAYER</string>
+    <string name="start_online_button">MULTI\nPLAYER</string>
+    <string name="start_info_button">SO\nGEHT\'S</string>
+    <string name="start_assist_button">DONATE</string>
+    <string name="start_feedback_button">FEED\nBACK</string>
+
+    <!-- Offline -->
+    <string name="offline_title">SINGLE PLAYER</string>
+    <string name="offline_message_no_equations_solved"><![CDATA[<font color=red>0</font><br>Gleichungen gelöst,<br>los geht\'s im Spiel!]]></string>
+    <string name="offline_message_one_equation_solved"><![CDATA[<font color=green>1</font><br>Gleichung gelöst,<br>gute Arbeit!]]></string>
+    <string name="offline_message_some_equations_solved"><![CDATA[<font color=green>%1$d</font><br>Gleichungen gelöst,<br>du bist klasse!]]></string>
+    <string name="offline_message_many_equations_solved"><![CDATA[<font color=green>%1$d</font><br>Gleichungen gelöst,<br>du bist unglaublich!]]></string>
+    <string name="offline_level_button">SCHON\nGESPIELT</string>
+    <string name="offline_play_button">INS\nSPIEL</string>
+
+    <!-- Game -->
+    <string name="game_initial_status_no_steps">Los gehts, löse die Gleichung!</string>
+    <string name="game_initial_status_one_step">Gelöst in einem Schritt</string>
+    <string name="game_initial_status_some_steps">Gelöst in %1$d Schritten</string>
+    <string name="game_initial_status_many_steps">Gelöst in über 99 Schritten</string>
+    <string name="game_ensuing_status_some_steps">Schritt %1$d</string>
+    <string name="game_ensuing_status_many_steps">Über 99 Schritte</string>
+    <string name="game_ceasing_status_one_step">Klasse, gelöst in einem Schritt!</string>
+    <string name="game_ceasing_status_some_steps">Klasse, gelöst in %1$d Schritten!</string>
+    <string name="game_ceasing_status_many_steps">Klasse, gelöst in über 99 Schritten!</string>
+    <string name="game_ceasing_status_one_step_less">Klasse, ein Schritt weniger!</string>
+    <string name="game_ceasing_status_some_steps_less">Klasse, %1$d Schritte weniger!</string>
+    <string name="game_ceasing_status_many_steps_less">Klasse, über 99 Schritte weniger!</string>
+    <string name="game_ceasing_status_one_step_more">Klasse, aber ein Schritt mehr!</string>
+    <string name="game_ceasing_status_some_steps_more">Klasse, aber %1$d Schritte mehr!</string>
+    <string name="game_ceasing_status_many_steps_more">Klasse, aber über 99 Schritte mehr!</string>
+    <string name="game_ceasing_status_equal_steps">Klasse, gleich viele Schritte!</string>
+
+    <!-- Level -->
+    <string name="level_title">SCHON GESPIELT</string>
+    <string name="level_hint">Egal ob schon gelöst oder übersprungen, hier kannst du jede Gleichung noch einmal spielen.</string>
+    <string name="level_item_no_steps">Noch nicht gelöst</string>
+    <string name="level_item_one_step">Gelöst in einem Schritt</string>
+    <string name="level_item_some_steps">Gelöst in %1$d Schritten</string>
+    <string name="level_item_many_steps">Gelöst in über 99 Schritten</string>
+
+    <!-- Online -->
+    <string name="online_title">MULTI PLAYER</string>
+    <string name="online_status_signed_in"><![CDATA[<font color=green>Teste dein Können!</font><br>Spiele online Events<br>gegen andere Spieler]]></string>
+    <string name="online_status_signed_out"><![CDATA[Spiele online mit deinem<br><font color=#34A853>Google Play Games</font> Zugang.<br>Logge also zuerst einmal ein]]></string>
+    <string name="online_button_sign_in">Log-in</string>
+    <string name="online_button_sign_out">Log-out</string>
+    <string name="online_button_events">EVENTS</string>
+
+    <!-- Events -->
+    <string name="events_title">EVENTS</string>
+    <string name="events_hint_download">Keine Events? Kein Problem! Klicke einfach den Downloadbutton in der oberen rechten Ecke.</string>
+    <string name="events_hint_downloading">Einen Moment, die Events werden gerade heruntergeladen.</string>
+    <string name="events_item_player_score">Deine Schritte</string>
+    <string name="events_item_top_score">Beste Schritte</string>
+
+    <!-- Event -->
+    <string name="event_title">EVENT %1$d</string>
+    <string name="event_score_button">DEINE\nSCHRITTE</string>
+    <string name="event_play_button">EVENT\nSPIELEN</string>
+
+    <!-- Info How To -->
+    <string name="info_how_to_title">So geht\'s</string>
+    <string name="info_how_to_description_1">Zuerst das Wichtigste. Deine Aufgabe ist es, Gleichungen nach ihrem X aufzulösen. Das schaffst du durch geschicktes Zusammenfassen und Umstellen.</string>
+    <string name="info_how_to_description_2">Zusammenfassen geht ganz leicht von der Hand. Markiere ein Element mit deiner Fingerspitze und ziehe einen Pfeil zu deinem Ziel.</string>
+    <string name="info_how_to_description_3">Du kannst auch mehrere Elemente markieren. Verweile einfach mit deiner Fingerspitze auf einem Element und schon markierst du immer mehr!</string>
+    <string name="info_how_to_description_4">Das funktioniert selbstverständlich auch mit deinem Ziel.</string>
+    <string name="info_how_to_description_5">Brüche, zum Beispiel, fasst du genau so zusammen. Verweile mit deiner Fingerspitze auf dem ersten Bruch, bis er markiert ist. Ziehe dann einen Pfeil zum Zweiten und warte ein wenig, ohne deine Fingerspitze anzuheben.</string>
+    <string name="info_how_to_description_6">Umstellen ist auch kein Hexenwerk. Markiere ein oder mehrere Elemente und ziehe einen Pfeil zur anderen Seite der Gleichung, fertig!</string>
+    <string name="info_how_to_description_7">Schaue dir zum Schluss noch die Kontrolleiste des Spiels an. Sie unterstützt dich beim Lösen der Gleichungen.</string>
+    <string name="info_how_to_description_8">Deine letzte Aktion kannst du hiermit rückgängig machen.</string>
+    <string name="info_how_to_description_9">Plusminus multipliziert beide Seiten einer Gleichung mit minus eins. Das ist besonders nützlich, wenn du nach -X aufgelöst hast.</string>
+    <string name="info_how_to_description_10">Es ist nicht schlimm, wenn du eine Gleichung nicht lösen kannst, denn hiermit springst du sofort zur Nächsten.</string>
+    <string name="info_how_to_description_11">Hinter dem kleinen \'i\' verstecken sich nützliche Informationen über deine Aktionen.</string>
+    <string name="info_how_to_description_12">Wird es dir doch einmal zu bunt, kannst du hier das Spiel beenden.</string>
+
+    <!-- Info App Review -->
+    <string name="info_app_review_description_1">Du hast bisher jede Gleichung mit Bravour gelöst! Ich hoffe, es hat dir Freude bereitet und du hast etwas dabei gelernt. Mathe macht einfach Freude, wenn es richtig gelehrt wird. x=1 wird mit Liebe entwickelt, um genau das zu tun.</string>
+    <string name="info_app_review_description_2">Ehrliche Rezensionen sind Gold wert, um x=1 weiter zu verbessern. Wenn du vielleicht kurz Zeit hast, klicke auf den Button unten um x=1 zu rezensieren. Eine Sternebewertung allein wird natürlich auch geschätzt!</string>
+
+    <!-- Info Equation -->
+    <string name="info_equation_title">Gleichung</string>
+    <string name="info_equation_description_1">Das Wichtigste einer Gleichung ist ihr Gleichheitszeichen (und natürlich, dass du versuchst, sie zu lösen)! Es symbolisiert, dass beide Seiten im Gleichgewicht sind.</string>
+    <string name="info_equation_description_2">Interessant wird es, wenn sich ein unbekanntes X in die Gleichung verirrt. Jetzt kommt es darauf an, welche Zahl du einsetzt, um das Gleichgewicht zu halten.</string>
+    <string name="info_equation_description_3">Das ist nicht nur in Mathe nützlich! Stell dir vor, du möchtest mit deinem Kumpel zusammen x=1 spielen. Natürlich sorgst du vor und bestellst genügend Pizzen. Dein Kumpel mampft 2 Pizzen in der Stunde und du eine in derselben Zeit. Wie viele Pizzen musst du bestellen, um euch für 3 Stunden zu versorgen?</string>
+    <string name="info_equation_description_4">Die Gleichung macht es ganz einfach, oder? Löse sie nur noch nach X auf und schon hast du diese überaus wichtige Frage geklärt!</string>
+
+    <!-- Info Order Of Operations -->
+    <string name="info_order_of_operations_title">Punkt vor Strich</string>
+    <string name="info_order_of_operations_description_1">Multiplikation und Division werden immer vor Addition und Subtraktion ausgeführt. Das ist die wichtigste Regel beim Lösen einer Gleichung. Was passiert, wenn du sie missachtest, siehst du sofort:</string>
+    <string name="info_order_of_operations_description_2">Das kann nicht stimmen! Die Gleichung ist nicht mehr im Gleichgewicht! Jetzt multipliziere zuerst und addiere danach, genauso wie es sein muss.</string>
+    <string name="info_order_of_operations_description_3">So erhältst du prompt das richtige Ergebnis. Ohne die Punkt- vor Strichrechnung geht es einfach nicht. Merke sie dir ganz genau!</string>
+
+    <!-- Info Addition -->
+    <string name="info_addition_title">Addition</string>
+    <string name="info_addition_description_1">Die Addition ist eine der ersten und einfachsten mathematischen Operationen. Es gibt für sie dennoch einige wichtige Rechenregeln. Zum Beispiel ändert eine Addition mit 0 nichts am Ergebnis:</string>
+    <string name="info_addition_description_2">Auch darfst du die Bestandteile einer Addition immer vertauschen, sofern du die Vorzeichen mitnimmst.</string>
+    <string name="info_addition_description_3">Etwas komplizierter ist die Regel für das Addieren von Brüchen. Du darfst nämlich nur Brüche mit gleichem Nenner addieren.</string>
+    <string name="info_addition_description_4">Besitzen die Brüche unterschiedliche Nenner, musst du sie vorher erweitern und so für einen gleichen Nenner sorgen. Multipliziere zuerst die beiden Nenner miteinander. Anschließend erweiterst du die Zähler, indem du den Zähler des einen Bruchs mit dem Nenner des anderen multiplizierst. Addiere zum Schluss dann einfach die erweiterten Zähler.</string>
+
+    <!-- Info Subtraction -->
+    <string name="info_subtraction_title">Subtraktion</string>
+    <string name="info_subtraction_description_1">Die Subtraktion ist die Umkehroperation der Addition. Du kannst also eine Addition mit ihr rückgängig machen! Schaue dir einmal folgende Addition an:</string>
+    <string name="info_subtraction_description_2">Wie kommst du nun von der 3 wieder zu einem der Summanden, sagen wir der 1? Mithilfe der Subtraktion ist es ganz leicht, du ziehst einfach die 2 von der 3 ab!</string>
+    <string name="info_subtraction_description_3">Weiter geht\'s mit den Rechenregeln der Subtraktion. Auch bei dieser ändert sich das Ergebnis nicht, wenn du 0 abziehst.</string>
+    <string name="info_subtraction_description_4">Ebenfalls kannst du ihre Bestandteile beliebig tauschen, sofern du die Vorzeichen mitnimmst!</string>
+    <string name="info_subtraction_description_5">Die Regel für das Subtrahieren von Brüchen ist komplizierter. Doch keine Sorge, dasselbe hast du schon einmal bei der Addition geschafft! Auch hier musst du auf einen gemeinsamen Nenner achten.</string>
+    <string name="info_subtraction_description_6">Besitzen die Brüche unterschiedliche Nenner, musst du sie vorher erweitern und so für einen gleichen Nenner sorgen. Multipliziere zuerst die beiden Nenner miteinander. Anschließend erweiterst du die Zähler, indem du den Zähler des einen Bruchs mit dem Nenner des anderen multiplizierst. Subtrahiere zum Schluss dann einfach die erweiterten Zähler.</string>
+
+    <!-- Info Multiplication -->
+    <string name="info_multiplication_title">Multiplikation</string>
+    <string name="info_multiplication_description_1">Die Multiplikation ist die Kurzschreibweise der Addition und das ist auch schon das Wichtigste, was du über sie wissen musst! Schaue dir einmal die lange Addition auf der linken Seite der Gleichung an und dann ihre Kurzschreibweise auf der rechten. Das spart einfach Platz.</string>
+    <string name="info_multiplication_description_2">Daraus ergibt sich automatisch, dass eine Multiplikation mit 0 immer 0 ergibt.</string>
+    <string name="info_multiplication_description_3">Wie bei der Addition kannst du auch die Bestandteile einer Multiplikation beliebig vertauschen. Vergiss aber nicht, die Vorzeichen mitzunehmen.</string>
+    <string name="info_multiplication_description_4">Apropos Vorzeichen. Achte genau darauf, wie oft das Minus als Vorzeichen vorkommt! Ein einzelnes Minus führt zu einem negativen Ergebnis.</string>
+    <string name="info_multiplication_description_5">Und bei mehr als einem Minus? Nun, Minus mal Minus ergibt Plus!</string>
+    <string name="info_multiplication_description_6">Ganz zum Schluss noch die Multiplikation von Brüchen. Multipliziere einfach die jeweiligen Zähler und Nenner miteinander. Das war es auch schon!</string>
+
+    <!-- Info Division -->
+    <string name="info_division_title">Division</string>
+    <string name="info_division_description_1">Die Division ist die Umkehroperation der Multiplikation. Schaue dir einmal diese an:</string>
+    <string name="info_division_description_2">Jetzt möchtest du die Multiplikation rückgängig machen und fragst dich, wie oft die 2 in der 6 steckt. Mithilfe der Division ist das ganz einfach.</string>
+    <string name="info_division_description_3">Das bringt uns gleich zur wichtigsten Regel der Division: Teile niemals durch 0! Denn die 0 würde unendlich mal in der 6 stecken - mit Unendlich kannst du aber nicht weiterrechnen!</string>
+    <string name="info_division_description_4">Zum Schluss ein Wort zu Doppelbrüchen. Du brauchst dir nur eines zu merken: Ein Doppelbruch ist eigentlich nichts Anderes als die Multiplikation des Zählers mit dem Reziproke des Nenners.</string>
+    <string name="info_division_description_5">Reziproke klingt erst einmal furchtbar kompliziert, doch ist es nur Folgendes.</string>
+    <string name="info_division_description_6">Rechts steht das Reziproke des linken Bruchs. Der Bruch wird also einfach nur umgedreht.</string>
+
+    <!-- Info Reduce -->
+    <string name="info_reduce_title">Kürzen</string>
+    <string name="info_reduce_description_1">Beim Kürzen teilst du Zähler und Nenner durch ihren größten gemeinsamen Teiler und vereinfachst so den Bruch. Schaue dir einmal dieses Beispiel an:</string>
+    <string name="info_reduce_description_2">Die 2 ist der größte gemeinsame Teiler. Du kannst sie also gleich aus dem Zähler streichen! Anschließend brauchst du nur noch den Nenner durch 2 zu teilen und erhältst den gekürzten Bruch.</string>
+    <string name="info_reduce_description_3">Doch Vorsicht! Kürzen ist nur erlaubt, wenn Zähler und Nenner einzelne Zahlen oder Produkte sind - aus Summen und Differenzen darfst du nicht kürzen.</string>
+
+    <!-- Info Condensing With Variable -->
+    <string name="info_condensing_with_variable_description_1">Das X ist nur eine Variable und möchte flexibel bleiben! Diese Elemente der Gleichung kannst du also nicht zusammenfassen. Stelle das X stattdessen geschickt frei und schon bist du der Lösung einen Schritt näher!</string>
+
+    <!-- Info Division Through Zero -->
+    <string name="info_division_through_zero_description_1">Teile niemals durch 0 - das Ergebnis wäre Unendlich! Das erkennst du sofort, wenn du durch immer kleinere Zahlen teilst. Starte mit einem Hundertstel.</string>
+    <string name="info_division_through_zero_description_2">Weiter geht\'s mit einem Tausendstel.</string>
+    <string name="info_division_through_zero_description_3">Und einem Zehntausendstel.</string>
+    <string name="info_division_through_zero_description_4">Das Ergebnis wird größer, je kleiner die Zahl ist, durch die du teilst. Bei der Division durch 0 ist dann Unendlich erreicht. Unendlich ist aber keine Zahl - du kannst mit ihr nicht weiterrechnen!</string>
+
+    <!-- Info Reduce With Dash Operation -->
+    <string name="info_reduce_with_dash_operation_description_1">Nur wenn Zähler und Nenner einzelne Zahlen oder Produkte sind, ist es sinnvoll zu kürzen. Das siehst du sofort, wenn du folgenden Bruch mit 2 kürzt.</string>
+    <string name="info_reduce_with_dash_operation_description_2">Beachte, dass du dabei den kompletten Zähler und Nenner durch 2 teilen musst - also auch die 3! Das erreichst du, indem du den Bruch vorher auseinander ziehst.</string>
+    <string name="info_reduce_with_dash_operation_description_3">Nun kannst du die 2 mit der 2 kürzen und erhältst als Ergebnis die 1. Doch Moment, was ist jetzt mit der 3? Die musst du noch addieren und landest so wieder am Anfang!</string>
+
+    <!-- Info Simplify -->
+    <string name="info_simplify_description_1">Achte sorgfältig darauf, dass jeder deiner Schritte die Gleichung vereinfacht. Fasse also komplizierte Ausdrücke immer zuerst zusammen - nur so findest du den schnellsten Weg zum X!</string>
+
+    <!-- Assist -->
+    <string name="assist_title">DONATE</string>
+    <string name="assist_description_1">x=1 ist mein Lieblingsprojekt und daran zu arbeiten macht mir sehr viel Spaß! Hoffentlich hast du auch viel Freude und das eine oder andere gelernt.</string>
+    <string name="assist_description_2">Gerne möchte ich x=1 komplett kostenlos und ohne Werbung betreiben, sodass jeder Freude an Mathe entdecken kann. Hierbei möchte ich dich um Hilfe bitten.</string>
+    <string name="assist_description_3">Eine kleine Donation einmal oder ab und zu reicht aus, um Kosten und Werbung komplett zu vermeiden. Darüber hinaus kann ich dir jedoch nicht viel dafür bieten.</string>
+    <string name="assist_button_donate">Donate %1$s</string>
+    <string name="assist_donation_status_sku_loading">Eine Sekunde, die Preisgleichung wird gerade gelöst.</string>
+    <string name="assist_donation_status_sku_loaded">Preisgleichung gelöst. Du kanst jetzt jederzeit donaten.</string>
+    <string name="assist_donation_status_purchasing">Kontaktiere Google Play, gleich geht\'s weiter.</string>
+    <string name="assist_donation_status_purchased">Vielen Dank für deine Donation. Du bist klasse! Ein kleines Dankeschön erwartet dich, wenn du hochscrollst.</string>
+    <string name="assist_donation_status_pending">Deine letzte Donation braucht noch etwas Zeit. Sobald ihre Zahlung bestätigt ist, kannst du wieder donaten.</string>
+    <string name="assist_donation_status_failed">Oh je, etwas ist schief gelaufen. Deine Donation konnte nicht durchgeführt werden.</string>
+
+    <!-- Feedback -->
+    <string name="feedback_title">FEEDBACK</string>
+    <string name="feedback_text">“Die Mathematik als Fachgebiet ist so ernst, daß man keine Gelegenheit versäumen sollte, sie unterhaltsamer zu gestalten.”\nBlaise Pascal\n\nGenau das möchte ich mit x=1 erreichen. Da eine Meinung (meine!) aber natürlich viel zu wenig ist: Wie gefällt dir x=1? Und besonders wichtig, was kann ich verbessern? Schreib mir doch einfach über E-Mail oder Twitter!\n\nE-Mail: xgleich1@gmail.com\nTwitter: https://twitter.com/xgleich1</string>
+
+</resources>

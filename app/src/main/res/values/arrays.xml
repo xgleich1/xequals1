@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Generation -->
+    <string-array name="generation_equals_relation_rules">
+
+        <item><![CDATA[<start>~=[{<sides_size_2_2>|<sides_size_2_3>|<sides_size_2_4>|<sides_size_2_5>|<sides_size_3_2>|<sides_size_3_3>|<sides_size_3_4>|<sides_size_3_5>|<sides_size_4_2>|<sides_size_4_3>|<sides_size_4_4>|<sides_size_4_5>|<sides_size_5_2>|<sides_size_5_3>|<sides_size_5_4>|<sides_size_5_5>}]]]></item>
+
+        <item><![CDATA[<sides_size_2_2>~<term_size_2>,<term_size_2>]]></item>
+        <item><![CDATA[<sides_size_2_3>~<term_size_2>,<term_size_3>]]></item>
+        <item><![CDATA[<sides_size_2_4>~<term_size_2>,<term_size_4>]]></item>
+        <item><![CDATA[<sides_size_2_5>~<term_size_2>,<term_size_5>]]></item>
+
+        <item><![CDATA[<sides_size_3_2>~<term_size_3>,<term_size_2>]]></item>
+        <item><![CDATA[<sides_size_3_3>~<term_size_3>,<term_size_3>]]></item>
+        <item><![CDATA[<sides_size_3_4>~<term_size_3>,<term_size_4>]]></item>
+        <item><![CDATA[<sides_size_3_5>~<term_size_3>,<term_size_5>]]></item>
+
+        <item><![CDATA[<sides_size_4_2>~<term_size_4>,<term_size_2>]]></item>
+        <item><![CDATA[<sides_size_4_3>~<term_size_4>,<term_size_3>]]></item>
+        <item><![CDATA[<sides_size_4_4>~<term_size_4>,<term_size_4>]]></item>
+        <item><![CDATA[<sides_size_4_5>~<term_size_4>,<term_size_5>]]></item>
+
+        <item><![CDATA[<sides_size_5_2>~<term_size_5>,<term_size_2>]]></item>
+        <item><![CDATA[<sides_size_5_3>~<term_size_5>,<term_size_3>]]></item>
+        <item><![CDATA[<sides_size_5_4>~<term_size_5>,<term_size_4>]]></item>
+        <item><![CDATA[<sides_size_5_5>~<term_size_5>,<term_size_5>]]></item>
+
+        <item><![CDATA[<term_size_1>~{<item>|<fraction>}]]></item>
+
+        <item><![CDATA[<term_size_2>~<operation>[<term_size_1>,<term_size_1>]]]></item>
+
+        <item><![CDATA[<term_size_3>~<operation>[{<operands_size_3_a>|<operands_size_3_b>}]]]></item>
+        <item><![CDATA[<operands_size_3_a>~<term_size_1>,<term_size_2>]]></item>
+        <item><![CDATA[<operands_size_3_b>~<term_size_2>,<term_size_1>]]></item>
+
+        <item><![CDATA[<term_size_4>~<operation>[{<operands_size_4_a>|<operands_size_4_b>|<operands_size_4_c>}]]]></item>
+        <item><![CDATA[<operands_size_4_a>~<term_size_1>,<term_size_3>]]></item>
+        <item><![CDATA[<operands_size_4_b>~<term_size_2>,<term_size_2>]]></item>
+        <item><![CDATA[<operands_size_4_c>~<term_size_3>,<term_size_1>]]></item>
+
+        <item><![CDATA[<term_size_5>~<operation>[{<operands_size_5_a>|<operands_size_5_b>|<operands_size_5_c>|<operands_size_5_d>}]]]></item>
+        <item><![CDATA[<operands_size_5_a>~<term_size_1>,<term_size_4>]]></item>
+        <item><![CDATA[<operands_size_5_b>~<term_size_2>,<term_size_3>]]></item>
+        <item><![CDATA[<operands_size_5_c>~<term_size_3>,<term_size_2>]]></item>
+        <item><![CDATA[<operands_size_5_d>~<term_size_4>,<term_size_1>]]></item>
+
+        <item><![CDATA[<item>~<sign>i]]></item>
+        <item><![CDATA[<fraction>~+/[<item>,<item>]]]></item>
+        <item><![CDATA[<operation>~<sign>{±|/|*}]]></item>
+
+        <item><![CDATA[<sign>~{+|+|+|+|-}]]></item>
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,58 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "d80a1ba1dd19a49133808647812fa5d6",
+    "entities": [
+      {
+        "tableName": "preset_level",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`preset_level_key` INTEGER NOT NULL, `preset_level_exercise` TEXT NOT NULL, `preset_level_finished` INTEGER NOT NULL, `preset_level_game_steps` INTEGER NOT NULL, `preset_level_best_steps` INTEGER NOT NULL, PRIMARY KEY(`preset_level_key`))",
+        "fields": [
+          {
+            "fieldPath": "key",
+            "columnName": "preset_level_key",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "exercise",
+            "columnName": "preset_level_exercise",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "finished",
+            "columnName": "preset_level_finished",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gameSteps",
+            "columnName": "preset_level_game_steps",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bestSteps",
+            "columnName": "preset_level_best_steps",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "preset_level_key"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'd80a1ba1dd19a49133808647812fa5d6')"
+    ]
+  }
+}

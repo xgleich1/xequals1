@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <bool name="firebase_analytics_enabled">false</bool>
+    <bool name="firebase_crashlytics_enabled">false</bool>
+
+</resources>
