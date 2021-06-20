@@ -26,4 +26,4 @@ Gradle 6.7.1 and Kotlin 1.5.0.
 Since the app is available in production, all sensitive
 identifiers are 'redacted'. This makes the multi player
 and donation parts unusable. If you want to experience
-them , best install the app from the google play store.
+them, best install the app from the google play store.
